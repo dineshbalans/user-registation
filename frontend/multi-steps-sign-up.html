@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<!--
+Author: MS AGRI TRUST
+Product Version: 8.2.0
+Website: https://www.msagritrust.org
+Contact: support@msagritrust.org
+Follow: www.twitter.com/msagritrust
+Like: www.facebook.com/msagritrust
+-->
+<html lang="en">
+	<!--begin::Head-->
+	<head><base href=""/>
+		<title>MS AGRI TRUST - VOLUNTEERS</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
+		<meta name="keywords" content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Metronic - Bootstrap Admin Template, HTML, VueJS, React, Angular. Laravel, Asp.Net Core, Ruby on Rails, Spring Boot, Blazor, Django, Express.js, Node.js, Flask Admin Dashboard Theme & Template" />
+		
+		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+		<!--begin::Fonts(mandatory for all pages)-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Global Stylesheets Bundle-->
+		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_body" class="app-blank">
+		<!--begin::Theme mode setup on page load-->
+		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
+		<!--end::Theme mode setup on page load-->
+		<!--begin::Root-->
+		<div class="d-flex flex-column flex-root" id="kt_app_root">
+			<!--begin::Authentication - Multi-steps-->
+			<div class="d-flex flex-column flex-lg-row flex-column-fluid stepper stepper-pills stepper-column stepper-multistep" id="kt_create_account_stepper">
+				<!--begin::Aside-->
+				<div class="d-flex flex-column flex-lg-row-auto w-lg-350px w-xl-500px">
+					<div class="d-flex flex-column position-lg-fixed top-0 bottom-0 w-lg-350px w-xl-500px scroll-y bgi-size-cover bgi-position-center" style="background-image: url(assets/media/misc/auth-bg.png)">
+						<!--begin::Header-->
+						<div class="d-flex flex-center py-10 py-lg-20 mt-lg-20">
+							<!--begin::Logo-->
+							<a href="../../demo1/dist/index.html">
+								<img alt="Logo" src="assets/media/logos/logo.png" class="h-70px" />
+							</a>
+							<!--end::Logo-->
+						</div>
+						<!--end::Header-->
+						<!--begin::Body-->
+						<div class="d-flex flex-row-fluid justify-content-center p-10 ">
+							<!--begin::Nav-->
+							<div class="stepper-nav">
+								<!--begin::Step 1-->
+								<div class="stepper-item current" data-kt-stepper-element="nav">
+									<!--begin::Wrapper-->
+									<div class="stepper-wrapper">
+										<!--begin::Icon-->
+										<div class="stepper-icon rounded-3">
+											<i class="ki-duotone ki-check fs-2 stepper-check"></i>
+											<span class="stepper-number">1</span>
+										</div>
+										<!--end::Icon-->
+										<!--begin::Label-->
+										<div class="stepper-label">
+											<h3 class="stepper-title fs-2">Account Type</h3>
+											<div class="stepper-desc fw-normal">Select your account type</div>
+										</div>
+										<!--end::Label-->
+									</div>
+									<!--end::Wrapper-->
+									<!--begin::Line-->
+									<div class="stepper-line h-40px"></div>
+									<!--end::Line-->
+								</div>
+								<!--end::Step 1-->
+								<!--begin::Step 2-->
+								<div class="stepper-item" data-kt-stepper-element="nav">
+									<!--begin::Wrapper-->
+									<div class="stepper-wrapper">
+										<!--begin::Icon-->
+										<div class="stepper-icon rounded-3">
+											<i class="ki-duotone ki-check fs-2 stepper-check"></i>
+											<span class="stepper-number">2</span>
+										</div>
+										<!--end::Icon-->
+										<!--begin::Label-->
+										<div class="stepper-label">
+											<h3 class="stepper-title fs-2">Person Info</h3>
+											<div class="stepper-desc fw-normal">Setup your Person settings</div>
+										</div>
+										<!--end::Label-->
+									</div>
+									<!--end::Wrapper-->
+									<!--begin::Line-->
+									<div class="stepper-line h-40px"></div>
+									<!--end::Line-->
+								</div>
+								<!--end::Step 2-->
+								<!--begin::Step 3-->
+								<div class="stepper-item" data-kt-stepper-element="nav">
+									<!--begin::Wrapper-->
+									<div class="stepper-wrapper">
+										<!--begin::Icon-->
+										<div class="stepper-icon">
+											<i class="ki-duotone ki-check fs-2 stepper-check"></i>
+											<span class="stepper-number">3</span>
+										</div>
+										<!--end::Icon-->
+										<!--begin::Label-->
+										<div class="stepper-label">
+											<h3 class="stepper-title fs-2">Person Details</h3>
+											<div class="stepper-desc fw-normal">Setup your Person details</div>
+										</div>
+										<!--end::Label-->
+									</div>
+									<!--end::Wrapper-->
+									<!--begin::Line-->
+									<div class="stepper-line h-40px"></div>
+									<!--end::Line-->
+								</div>
+								<!--end::Step 3-->
+								<!--begin::Step 4-->
+								<div class="stepper-item" data-kt-stepper-element="nav">
+									<!--begin::Wrapper-->
+									<div class="stepper-wrapper">
+										<!--begin::Icon-->
+										<div class="stepper-icon">
+											<i class="ki-duotone ki-check fs-2 stepper-check"></i>
+											<span class="stepper-number">4</span>
+										</div>
+										<!--end::Icon-->
+										<!--begin::Label-->
+										<div class="stepper-label">
+											<h3 class="stepper-title fs-2">Support Type</h3>
+											<div class="stepper-desc fw-normal">Setup your Details</div>
+										</div>
+										<!--end::Label-->
+									</div>
+									<!--end::Wrapper-->
+									<!--begin::Line-->
+									<div class="stepper-line h-40px"></div>
+									<!--end::Line-->
+								</div>
+								<!--end::Step 4-->
+								<!--begin::Step 5-->
+								<div class="stepper-item" data-kt-stepper-element="nav">
+									<!--begin::Wrapper-->
+									<div class="stepper-wrapper">
+										<!--begin::Icon-->
+										<div class="stepper-icon">
+											<i class="ki-duotone ki-check fs-2 stepper-check"></i>
+											<span class="stepper-number">5</span>
+										</div>
+										<!--end::Icon-->
+										<!--begin::Label-->
+										<div class="stepper-label">
+											<h3 class="stepper-title fs-2">Completed</h3>
+											<div class="stepper-desc fw-normal">Your account is created</div>
+										</div>
+										<!--end::Label-->
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Step 5-->
+							</div>
+							<!--end::Nav-->
+						</div>
+						<!--end::Body-->
+						<!--begin::Footer-->
+						<div class="d-flex flex-center flex-wrap px-5 py-10">
+							<!--begin::Links-->
+							<div class="d-flex fw-normal">
+								<a href="" class="text-success px-5" target="_blank">Terms</a>
+								<a href="" class="text-success px-5" target="_blank">Plans</a>
+								<a href="" class="text-success px-5" target="_blank">Contact Us</a>
+							</div>
+							<!--end::Links-->
+						</div>
+						<!--end::Footer-->
+					</div>
+				</div>
+				<!--begin::Aside-->
+				<!--begin::Body-->
+				<div class="d-flex flex-column flex-lg-row-fluid py-10">
+					<!--begin::Content-->
+					<div class="d-flex flex-center flex-column flex-column-fluid">
+						<!--begin::Wrapper-->
+						<div class="w-lg-650px w-xl-700px p-10 p-lg-15 mx-auto">
+							<!--begin::Form-->
+							<form class="my-auto pb-5" novalidate="novalidate" id="kt_create_account_form">
+								<!--begin::Step 1-->
+								<div class="current" data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+										<!--begin::Heading-->
+										<!--begin::Form-->
+							<form class="form w-100" novalidate="novalidate" id="kt_sign_up_form" data-kt-redirect-url="../../demo1/dist/authentication/layouts/corporate/sign-in.html" action="#">
+								<!--begin::Heading-->
+								<div class="text-center mb-11">
+									<!--begin::Title-->
+									<h1 class="text-dark fw-bolder mb-3">Sign Up</h1>
+									<!--end::Title-->
+									<!--begin::Subtitle-->
+									<div class="text-gray-500 fw-semibold fs-6">Your Social Campaigns</div>
+									<!--end::Subtitle=-->
+								</div>
+								<!--begin::Heading-->
+								<!--begin::Login options-->
+								<div class="row g-3 mb-9">
+									<!--begin::Col-->
+									<div class="col-md-6">
+										<!--begin::Google link=-->
+										<a href="#" class="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100">
+										<img alt="Logo" src="assets/media/svg/brand-logos/google-icon.svg" class="h-15px me-3" />Sign in with Google</a>
+										<!--end::Google link=-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-md-6">
+										<!--begin::Google link=-->
+										<a href="#" class="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100">
+										<img alt="Logo" src="assets/media/svg/brand-logos/apple-black.svg" class="theme-light-show h-15px me-3" />
+										<img alt="Logo" src="assets/media/svg/brand-logos/apple-black-dark.svg" class="theme-dark-show h-15px me-3" />Sign in with Apple</a>
+										<!--end::Google link=-->
+									</div>
+									<!--end::Col-->
+								</div>
+								<!--end::Login options-->
+								<!--begin::Separator-->
+								<div class="separator separator-content my-14">
+									<span class="w-125px text-gray-500 fw-semibold fs-7">Or with email</span>
+								</div>
+								<!--end::Separator-->
+								<!--begin::Input group=-->
+								<div class="fv-row mb-8">
+									<!--begin::Email-->
+									<input type="text" placeholder="Email" name="email" autocomplete="off" class="form-control bg-transparent" />
+									<!--end::Email-->
+								</div>
+								<!--begin::Input group-->
+								<div class="fv-row mb-8" data-kt-password-meter="true">
+									<!--begin::Wrapper-->
+									<div class="mb-1">
+										<!--begin::Input wrapper-->
+										<div class="position-relative mb-3">
+											<input class="form-control bg-transparent" type="password" placeholder="Password" name="password" autocomplete="off" />
+											<span class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2" data-kt-password-meter-control="visibility">
+												<i class="ki-duotone ki-eye-slash fs-2"></i>
+												<i class="ki-duotone ki-eye fs-2 d-none"></i>
+											</span>
+										</div>
+										<!--end::Input wrapper-->
+										<!--begin::Meter-->
+										<div class="d-flex align-items-center mb-3" data-kt-password-meter-control="highlight">
+											<div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
+											<div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
+											<div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
+											<div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px"></div>
+										</div>
+										<!--end::Meter-->
+									</div>
+									<!--end::Wrapper-->
+									<!--begin::Hint-->
+									<div class="text-muted">Use 8 or more characters with a mix of letters, numbers & symbols.</div>
+									<!--end::Hint-->
+								</div>
+								<!--end::Input group=-->
+								<!--end::Input group=-->
+								<div class="fv-row mb-8">
+									<!--begin::Repeat Password-->
+									<input placeholder="Repeat Password" name="confirm-password" type="password" autocomplete="off" class="form-control bg-transparent" />
+									<!--end::Repeat Password-->
+								</div>
+								<!--end::Input group=-->
+								<!--begin::Accept-->
+								<div class="fv-row mb-8">
+									<label class="form-check form-check-inline">
+										<input class="form-check-input" type="checkbox" name="toc" value="1" />
+										<span class="form-check-label fw-semibold text-gray-700 fs-base ms-1">I Accept the
+										<a href="#" class="ms-1 link-primary">Terms</a></span>
+									</label>
+								</div>
+								<!--end::Accept-->
+							
+								<!--begin::Sign up-->
+								<div class="text-gray-500 text-center fw-semibold fs-6">Already have an Account?
+								<a href="../../demo1/dist/authentication/layouts/corporate/sign-in.html" class="link-primary fw-semibold">Sign in</a></div>
+								<!--end::Sign up-->
+							</form>
+							<!--end::Form-->
+										<!--end::Heading-->
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Step 1-->
+								<!--begin::Step 2-->
+								<div class="" data-kt-stepper-element="content">
+									<div id="kt_account_settings_profile_details" class="collapse show">
+											<!--begin::Form-->
+											<form id="kt_account_profile_details_form" class="form">
+												<!--begin::Card body-->
+												<div class="card-body border-top p-9">
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">Avatar</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8">
+															<!--begin::Image input-->
+															<div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url('assets/media/svg/avatars/blank.svg')">
+																<!--begin::Preview existing avatar-->
+																<div class="image-input-wrapper w-125px h-125px" style="background-image: url('assets/media/svg/avatars/blank.svg')"></div>
+																<!--end::Preview existing avatar-->
+																<!--begin::Label-->
+																<label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
+																	<i class="ki-duotone ki-pencil fs-7">
+																		<span class="path1"></span>
+																		<span class="path2"></span>
+																	</i>
+																	<!--begin::Inputs-->
+																	<input type="file" name="avatar" accept=".png, .jpg, .jpeg" />
+																	<input type="hidden" name="avatar_remove" />
+																	<!--end::Inputs-->
+																</label>
+																<!--end::Label-->
+																<!--begin::Cancel-->
+																<span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="Cancel avatar">
+																	<i class="ki-duotone ki-cross fs-2">
+																		<span class="path1"></span>
+																		<span class="path2"></span>
+																	</i>
+																</span>
+																<!--end::Cancel-->
+																<!--begin::Remove-->
+																<span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove avatar">
+																	<i class="ki-duotone ki-cross fs-2">
+																		<span class="path1"></span>
+																		<span class="path2"></span>
+																	</i>
+																</span>
+																<!--end::Remove-->
+															</div>
+															<!--end::Image input-->
+															<!--begin::Hint-->
+															<div class="form-text">Allowed file types: png, jpg, jpeg.</div>
+															<!--end::Hint-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Full Name</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8">
+															<!--begin::Row-->
+															<div class="row">
+																<!--begin::Col-->
+																<div class="col-lg-6 fv-row">
+																	<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder=" Name" value="" />
+																</div>
+																<!--end::Col-->
+																<!--begin::Col-->
+																<div class="col-lg-6 fv-row">
+																	<input type="text" name="lname" class="form-control form-control-lg form-control-solid" placeholder="Initial" value="" />
+																</div>
+																<!--end::Col-->
+															</div>
+															<!--end::Row-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">Father Name</span>															
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="Name" class="form-control form-control-lg form-control-solid" placeholder="Father Name" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Date of Birth</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="date" class="form-control form-control-lg form-control-solid" placeholder="Company name" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">Phone Number</span>
+															
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="Phone number" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">Whatsapp Number</span>
+												
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="Whatsapp number" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">Education</span>															
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<select name="Education" aria-label="Select a Education" data-control="select2" data-placeholder="Select a Education..." class="form-select form-select-solid form-select-lg fw-semibold">
+																<option value="">Select a Education...</option>
+																<option value="8th">8th</option>
+																<option value="10th">10th</option>
+																<option value="12th">12th</option>
+																<option value="Diplomo">Diplomo</option>
+																<option value="UG">UG</option>
+																<option value="PG">PG</option>
+															</select>
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">Occupation</span>															
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="Name" class="form-control form-control-lg form-control-solid" placeholder="Occupation" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													
+												</div>
+												<!--end::Card body-->
+												
+											</form>
+											<!--end::Form-->
+										</div>
+								</div>
+								<!--end::Step 2-->
+								<!--begin::Step 3-->
+								<div class="" data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+													
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">Country</span>															
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<select name="country" aria-label="Select a Country" data-control="select2" data-placeholder="Select a country..." class="form-select form-select-solid form-select-lg fw-semibold">
+																<option value="">Select a Country...</option>
+																<option data-kt-flag="flags/afghanistan.svg" value="AF">Afghanistan</option>
+																<option data-kt-flag="flags/aland-islands.svg" value="AX">Aland Islands</option>
+																<option data-kt-flag="flags/albania.svg" value="AL">Albania</option>
+																<option data-kt-flag="flags/algeria.svg" value="DZ">Algeria</option>
+																<option data-kt-flag="flags/american-samoa.svg" value="AS">American Samoa</option>
+																<option data-kt-flag="flags/andorra.svg" value="AD">Andorra</option>
+																<option data-kt-flag="flags/angola.svg" value="AO">Angola</option>
+																<option data-kt-flag="flags/anguilla.svg" value="AI">Anguilla</option>
+																<option data-kt-flag="flags/antigua-and-barbuda.svg" value="AG">Antigua and Barbuda</option>
+																<option data-kt-flag="flags/argentina.svg" value="AR">Argentina</option>
+																<option data-kt-flag="flags/armenia.svg" value="AM">Armenia</option>
+																<option data-kt-flag="flags/aruba.svg" value="AW">Aruba</option>
+																<option data-kt-flag="flags/australia.svg" value="AU">Australia</option>
+																<option data-kt-flag="flags/austria.svg" value="AT">Austria</option>
+																<option data-kt-flag="flags/azerbaijan.svg" value="AZ">Azerbaijan</option>
+																<option data-kt-flag="flags/bahamas.svg" value="BS">Bahamas</option>
+																<option data-kt-flag="flags/bahrain.svg" value="BH">Bahrain</option>
+																<option data-kt-flag="flags/bangladesh.svg" value="BD">Bangladesh</option>
+																<option data-kt-flag="flags/barbados.svg" value="BB">Barbados</option>
+																<option data-kt-flag="flags/belarus.svg" value="BY">Belarus</option>
+																<option data-kt-flag="flags/belgium.svg" value="BE">Belgium</option>
+																<option data-kt-flag="flags/belize.svg" value="BZ">Belize</option>
+																<option data-kt-flag="flags/benin.svg" value="BJ">Benin</option>
+																<option data-kt-flag="flags/bermuda.svg" value="BM">Bermuda</option>
+																<option data-kt-flag="flags/bhutan.svg" value="BT">Bhutan</option>
+																<option data-kt-flag="flags/bolivia.svg" value="BO">Bolivia, Plurinational State of</option>
+																<option data-kt-flag="flags/bonaire.svg" value="BQ">Bonaire, Sint Eustatius and Saba</option>
+																<option data-kt-flag="flags/bosnia-and-herzegovina.svg" value="BA">Bosnia and Herzegovina</option>
+																<option data-kt-flag="flags/botswana.svg" value="BW">Botswana</option>
+																<option data-kt-flag="flags/brazil.svg" value="BR">Brazil</option>
+																<option data-kt-flag="flags/british-indian-ocean-territory.svg" value="IO">British Indian Ocean Territory</option>
+																<option data-kt-flag="flags/brunei.svg" value="BN">Brunei Darussalam</option>
+																<option data-kt-flag="flags/bulgaria.svg" value="BG">Bulgaria</option>
+																<option data-kt-flag="flags/burkina-faso.svg" value="BF">Burkina Faso</option>
+																<option data-kt-flag="flags/burundi.svg" value="BI">Burundi</option>
+																<option data-kt-flag="flags/cambodia.svg" value="KH">Cambodia</option>
+																<option data-kt-flag="flags/cameroon.svg" value="CM">Cameroon</option>
+																<option data-kt-flag="flags/canada.svg" value="CA">Canada</option>
+																<option data-kt-flag="flags/cape-verde.svg" value="CV">Cape Verde</option>
+																<option data-kt-flag="flags/cayman-islands.svg" value="KY">Cayman Islands</option>
+																<option data-kt-flag="flags/central-african-republic.svg" value="CF">Central African Republic</option>
+																<option data-kt-flag="flags/chad.svg" value="TD">Chad</option>
+																<option data-kt-flag="flags/chile.svg" value="CL">Chile</option>
+																<option data-kt-flag="flags/china.svg" value="CN">China</option>
+																<option data-kt-flag="flags/christmas-island.svg" value="CX">Christmas Island</option>
+																<option data-kt-flag="flags/cocos-island.svg" value="CC">Cocos (Keeling) Islands</option>
+																<option data-kt-flag="flags/colombia.svg" value="CO">Colombia</option>
+																<option data-kt-flag="flags/comoros.svg" value="KM">Comoros</option>
+																<option data-kt-flag="flags/cook-islands.svg" value="CK">Cook Islands</option>
+																<option data-kt-flag="flags/costa-rica.svg" value="CR">Costa Rica</option>
+																<option data-kt-flag="flags/ivory-coast.svg" value="CI">Côte d'Ivoire</option>
+																<option data-kt-flag="flags/croatia.svg" value="HR">Croatia</option>
+																<option data-kt-flag="flags/cuba.svg" value="CU">Cuba</option>
+																<option data-kt-flag="flags/curacao.svg" value="CW">Curaçao</option>
+																<option data-kt-flag="flags/czech-republic.svg" value="CZ">Czech Republic</option>
+																<option data-kt-flag="flags/denmark.svg" value="DK">Denmark</option>
+																<option data-kt-flag="flags/djibouti.svg" value="DJ">Djibouti</option>
+																<option data-kt-flag="flags/dominica.svg" value="DM">Dominica</option>
+																<option data-kt-flag="flags/dominican-republic.svg" value="DO">Dominican Republic</option>
+																<option data-kt-flag="flags/ecuador.svg" value="EC">Ecuador</option>
+																<option data-kt-flag="flags/egypt.svg" value="EG">Egypt</option>
+																<option data-kt-flag="flags/el-salvador.svg" value="SV">El Salvador</option>
+																<option data-kt-flag="flags/equatorial-guinea.svg" value="GQ">Equatorial Guinea</option>
+																<option data-kt-flag="flags/eritrea.svg" value="ER">Eritrea</option>
+																<option data-kt-flag="flags/estonia.svg" value="EE">Estonia</option>
+																<option data-kt-flag="flags/ethiopia.svg" value="ET">Ethiopia</option>
+																<option data-kt-flag="flags/falkland-islands.svg" value="FK">Falkland Islands (Malvinas)</option>
+																<option data-kt-flag="flags/fiji.svg" value="FJ">Fiji</option>
+																<option data-kt-flag="flags/finland.svg" value="FI">Finland</option>
+																<option data-kt-flag="flags/france.svg" value="FR">France</option>
+																<option data-kt-flag="flags/french-polynesia.svg" value="PF">French Polynesia</option>
+																<option data-kt-flag="flags/gabon.svg" value="GA">Gabon</option>
+																<option data-kt-flag="flags/gambia.svg" value="GM">Gambia</option>
+																<option data-kt-flag="flags/georgia.svg" value="GE">Georgia</option>
+																<option data-kt-flag="flags/germany.svg" value="DE">Germany</option>
+																<option data-kt-flag="flags/ghana.svg" value="GH">Ghana</option>
+																<option data-kt-flag="flags/gibraltar.svg" value="GI">Gibraltar</option>
+																<option data-kt-flag="flags/greece.svg" value="GR">Greece</option>
+																<option data-kt-flag="flags/greenland.svg" value="GL">Greenland</option>
+																<option data-kt-flag="flags/grenada.svg" value="GD">Grenada</option>
+																<option data-kt-flag="flags/guam.svg" value="GU">Guam</option>
+																<option data-kt-flag="flags/guatemala.svg" value="GT">Guatemala</option>
+																<option data-kt-flag="flags/guernsey.svg" value="GG">Guernsey</option>
+																<option data-kt-flag="flags/guinea.svg" value="GN">Guinea</option>
+																<option data-kt-flag="flags/guinea-bissau.svg" value="GW">Guinea-Bissau</option>
+																<option data-kt-flag="flags/haiti.svg" value="HT">Haiti</option>
+																<option data-kt-flag="flags/vatican-city.svg" value="VA">Holy See (Vatican City State)</option>
+																<option data-kt-flag="flags/honduras.svg" value="HN">Honduras</option>
+																<option data-kt-flag="flags/hong-kong.svg" value="HK">Hong Kong</option>
+																<option data-kt-flag="flags/hungary.svg" value="HU">Hungary</option>
+																<option data-kt-flag="flags/iceland.svg" value="IS">Iceland</option>
+																<option data-kt-flag="flags/india.svg" value="IN">India</option>
+																<option data-kt-flag="flags/indonesia.svg" value="ID">Indonesia</option>
+																<option data-kt-flag="flags/iran.svg" value="IR">Iran, Islamic Republic of</option>
+																<option data-kt-flag="flags/iraq.svg" value="IQ">Iraq</option>
+																<option data-kt-flag="flags/ireland.svg" value="IE">Ireland</option>
+																<option data-kt-flag="flags/isle-of-man.svg" value="IM">Isle of Man</option>
+																<option data-kt-flag="flags/israel.svg" value="IL">Israel</option>
+																<option data-kt-flag="flags/italy.svg" value="IT">Italy</option>
+																<option data-kt-flag="flags/jamaica.svg" value="JM">Jamaica</option>
+																<option data-kt-flag="flags/japan.svg" value="JP">Japan</option>
+																<option data-kt-flag="flags/jersey.svg" value="JE">Jersey</option>
+																<option data-kt-flag="flags/jordan.svg" value="JO">Jordan</option>
+																<option data-kt-flag="flags/kazakhstan.svg" value="KZ">Kazakhstan</option>
+																<option data-kt-flag="flags/kenya.svg" value="KE">Kenya</option>
+																<option data-kt-flag="flags/kiribati.svg" value="KI">Kiribati</option>
+																<option data-kt-flag="flags/north-korea.svg" value="KP">Korea, Democratic People's Republic of</option>
+																<option data-kt-flag="flags/kuwait.svg" value="KW">Kuwait</option>
+																<option data-kt-flag="flags/kyrgyzstan.svg" value="KG">Kyrgyzstan</option>
+																<option data-kt-flag="flags/laos.svg" value="LA">Lao People's Democratic Republic</option>
+																<option data-kt-flag="flags/latvia.svg" value="LV">Latvia</option>
+																<option data-kt-flag="flags/lebanon.svg" value="LB">Lebanon</option>
+																<option data-kt-flag="flags/lesotho.svg" value="LS">Lesotho</option>
+																<option data-kt-flag="flags/liberia.svg" value="LR">Liberia</option>
+																<option data-kt-flag="flags/libya.svg" value="LY">Libya</option>
+																<option data-kt-flag="flags/liechtenstein.svg" value="LI">Liechtenstein</option>
+																<option data-kt-flag="flags/lithuania.svg" value="LT">Lithuania</option>
+																<option data-kt-flag="flags/luxembourg.svg" value="LU">Luxembourg</option>
+																<option data-kt-flag="flags/macao.svg" value="MO">Macao</option>
+																<option data-kt-flag="flags/madagascar.svg" value="MG">Madagascar</option>
+																<option data-kt-flag="flags/malawi.svg" value="MW">Malawi</option>
+																<option data-kt-flag="flags/malaysia.svg" value="MY">Malaysia</option>
+																<option data-kt-flag="flags/maldives.svg" value="MV">Maldives</option>
+																<option data-kt-flag="flags/mali.svg" value="ML">Mali</option>
+																<option data-kt-flag="flags/malta.svg" value="MT">Malta</option>
+																<option data-kt-flag="flags/marshall-island.svg" value="MH">Marshall Islands</option>
+																<option data-kt-flag="flags/martinique.svg" value="MQ">Martinique</option>
+																<option data-kt-flag="flags/mauritania.svg" value="MR">Mauritania</option>
+																<option data-kt-flag="flags/mauritius.svg" value="MU">Mauritius</option>
+																<option data-kt-flag="flags/mexico.svg" value="MX">Mexico</option>
+																<option data-kt-flag="flags/micronesia.svg" value="FM">Micronesia, Federated States of</option>
+																<option data-kt-flag="flags/moldova.svg" value="MD">Moldova, Republic of</option>
+																<option data-kt-flag="flags/monaco.svg" value="MC">Monaco</option>
+																<option data-kt-flag="flags/mongolia.svg" value="MN">Mongolia</option>
+																<option data-kt-flag="flags/montenegro.svg" value="ME">Montenegro</option>
+																<option data-kt-flag="flags/montserrat.svg" value="MS">Montserrat</option>
+																<option data-kt-flag="flags/morocco.svg" value="MA">Morocco</option>
+																<option data-kt-flag="flags/mozambique.svg" value="MZ">Mozambique</option>
+																<option data-kt-flag="flags/myanmar.svg" value="MM">Myanmar</option>
+																<option data-kt-flag="flags/namibia.svg" value="NA">Namibia</option>
+																<option data-kt-flag="flags/nauru.svg" value="NR">Nauru</option>
+																<option data-kt-flag="flags/nepal.svg" value="NP">Nepal</option>
+																<option data-kt-flag="flags/netherlands.svg" value="NL">Netherlands</option>
+																<option data-kt-flag="flags/new-zealand.svg" value="NZ">New Zealand</option>
+																<option data-kt-flag="flags/nicaragua.svg" value="NI">Nicaragua</option>
+																<option data-kt-flag="flags/niger.svg" value="NE">Niger</option>
+																<option data-kt-flag="flags/nigeria.svg" value="NG">Nigeria</option>
+																<option data-kt-flag="flags/niue.svg" value="NU">Niue</option>
+																<option data-kt-flag="flags/norfolk-island.svg" value="NF">Norfolk Island</option>
+																<option data-kt-flag="flags/northern-mariana-islands.svg" value="MP">Northern Mariana Islands</option>
+																<option data-kt-flag="flags/norway.svg" value="NO">Norway</option>
+																<option data-kt-flag="flags/oman.svg" value="OM">Oman</option>
+																<option data-kt-flag="flags/pakistan.svg" value="PK">Pakistan</option>
+																<option data-kt-flag="flags/palau.svg" value="PW">Palau</option>
+																<option data-kt-flag="flags/palestine.svg" value="PS">Palestinian Territory, Occupied</option>
+																<option data-kt-flag="flags/panama.svg" value="PA">Panama</option>
+																<option data-kt-flag="flags/papua-new-guinea.svg" value="PG">Papua New Guinea</option>
+																<option data-kt-flag="flags/paraguay.svg" value="PY">Paraguay</option>
+																<option data-kt-flag="flags/peru.svg" value="PE">Peru</option>
+																<option data-kt-flag="flags/philippines.svg" value="PH">Philippines</option>
+																<option data-kt-flag="flags/poland.svg" value="PL">Poland</option>
+																<option data-kt-flag="flags/portugal.svg" value="PT">Portugal</option>
+																<option data-kt-flag="flags/puerto-rico.svg" value="PR">Puerto Rico</option>
+																<option data-kt-flag="flags/qatar.svg" value="QA">Qatar</option>
+																<option data-kt-flag="flags/romania.svg" value="RO">Romania</option>
+																<option data-kt-flag="flags/russia.svg" value="RU">Russian Federation</option>
+																<option data-kt-flag="flags/rwanda.svg" value="RW">Rwanda</option>
+																<option data-kt-flag="flags/st-barts.svg" value="BL">Saint Barthélemy</option>
+																<option data-kt-flag="flags/saint-kitts-and-nevis.svg" value="KN">Saint Kitts and Nevis</option>
+																<option data-kt-flag="flags/st-lucia.svg" value="LC">Saint Lucia</option>
+																<option data-kt-flag="flags/sint-maarten.svg" value="MF">Saint Martin (French part)</option>
+																<option data-kt-flag="flags/st-vincent-and-the-grenadines.svg" value="VC">Saint Vincent and the Grenadines</option>
+																<option data-kt-flag="flags/samoa.svg" value="WS">Samoa</option>
+																<option data-kt-flag="flags/san-marino.svg" value="SM">San Marino</option>
+																<option data-kt-flag="flags/sao-tome-and-prince.svg" value="ST">Sao Tome and Principe</option>
+																<option data-kt-flag="flags/saudi-arabia.svg" value="SA">Saudi Arabia</option>
+																<option data-kt-flag="flags/senegal.svg" value="SN">Senegal</option>
+																<option data-kt-flag="flags/serbia.svg" value="RS">Serbia</option>
+																<option data-kt-flag="flags/seychelles.svg" value="SC">Seychelles</option>
+																<option data-kt-flag="flags/sierra-leone.svg" value="SL">Sierra Leone</option>
+																<option data-kt-flag="flags/singapore.svg" value="SG">Singapore</option>
+																<option data-kt-flag="flags/sint-maarten.svg" value="SX">Sint Maarten (Dutch part)</option>
+																<option data-kt-flag="flags/slovakia.svg" value="SK">Slovakia</option>
+																<option data-kt-flag="flags/slovenia.svg" value="SI">Slovenia</option>
+																<option data-kt-flag="flags/solomon-islands.svg" value="SB">Solomon Islands</option>
+																<option data-kt-flag="flags/somalia.svg" value="SO">Somalia</option>
+																<option data-kt-flag="flags/south-africa.svg" value="ZA">South Africa</option>
+																<option data-kt-flag="flags/south-korea.svg" value="KR">South Korea</option>
+																<option data-kt-flag="flags/south-sudan.svg" value="SS">South Sudan</option>
+																<option data-kt-flag="flags/spain.svg" value="ES">Spain</option>
+																<option data-kt-flag="flags/sri-lanka.svg" value="LK">Sri Lanka</option>
+																<option data-kt-flag="flags/sudan.svg" value="SD">Sudan</option>
+																<option data-kt-flag="flags/suriname.svg" value="SR">Suriname</option>
+																<option data-kt-flag="flags/swaziland.svg" value="SZ">Swaziland</option>
+																<option data-kt-flag="flags/sweden.svg" value="SE">Sweden</option>
+																<option data-kt-flag="flags/switzerland.svg" value="CH">Switzerland</option>
+																<option data-kt-flag="flags/syria.svg" value="SY">Syrian Arab Republic</option>
+																<option data-kt-flag="flags/taiwan.svg" value="TW">Taiwan, Province of China</option>
+																<option data-kt-flag="flags/tajikistan.svg" value="TJ">Tajikistan</option>
+																<option data-kt-flag="flags/tanzania.svg" value="TZ">Tanzania, United Republic of</option>
+																<option data-kt-flag="flags/thailand.svg" value="TH">Thailand</option>
+																<option data-kt-flag="flags/togo.svg" value="TG">Togo</option>
+																<option data-kt-flag="flags/tokelau.svg" value="TK">Tokelau</option>
+																<option data-kt-flag="flags/tonga.svg" value="TO">Tonga</option>
+																<option data-kt-flag="flags/trinidad-and-tobago.svg" value="TT">Trinidad and Tobago</option>
+																<option data-kt-flag="flags/tunisia.svg" value="TN">Tunisia</option>
+																<option data-kt-flag="flags/turkey.svg" value="TR">Turkey</option>
+																<option data-kt-flag="flags/turkmenistan.svg" value="TM">Turkmenistan</option>
+																<option data-kt-flag="flags/turks-and-caicos.svg" value="TC">Turks and Caicos Islands</option>
+																<option data-kt-flag="flags/tuvalu.svg" value="TV">Tuvalu</option>
+																<option data-kt-flag="flags/uganda.svg" value="UG">Uganda</option>
+																<option data-kt-flag="flags/ukraine.svg" value="UA">Ukraine</option>
+																<option data-kt-flag="flags/united-arab-emirates.svg" value="AE">United Arab Emirates</option>
+																<option data-kt-flag="flags/united-kingdom.svg" value="GB">United Kingdom</option>
+																<option data-kt-flag="flags/united-states.svg" value="US">United States</option>
+																<option data-kt-flag="flags/uruguay.svg" value="UY">Uruguay</option>
+																<option data-kt-flag="flags/uzbekistan.svg" value="UZ">Uzbekistan</option>
+																<option data-kt-flag="flags/vanuatu.svg" value="VU">Vanuatu</option>
+																<option data-kt-flag="flags/venezuela.svg" value="VE">Venezuela, Bolivarian Republic of</option>
+																<option data-kt-flag="flags/vietnam.svg" value="VN">Vietnam</option>
+																<option data-kt-flag="flags/virgin-islands.svg" value="VI">Virgin Islands</option>
+																<option data-kt-flag="flags/yemen.svg" value="YE">Yemen</option>
+																<option data-kt-flag="flags/zambia.svg" value="ZM">Zambia</option>
+																<option data-kt-flag="flags/zimbabwe.svg" value="ZW">Zimbabwe</option>
+															</select>
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">State</span>															
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<select name="State" aria-label="Select a State" data-control="select2" data-placeholder="Select a State..." class="form-select form-select-solid form-select-lg fw-semibold">
+																<option value="">Select a State...</option>
+																<option data-kt-flag="flags/afghanistan.svg" value="AF">Afghanistan</option>
+																<option data-kt-flag="flags/aland-islands.svg" value="AX">Aland Islands</option>
+																
+															</select>
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">District</span>															
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="Name" class="form-control form-control-lg form-control-solid" placeholder="District" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">Taluk</span>															
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="Name" class="form-control form-control-lg form-control-solid" placeholder="Taluk" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">Post Code</span>															
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="tel" name="Post Code" class="form-control form-control-lg form-control-solid" placeholder="Post Code" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">Address 1</span>															
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="Name" class="form-control form-control-lg form-control-solid" placeholder="Address 1" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">Address 2</span>															
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="Name" class="form-control form-control-lg form-control-solid" placeholder="Address 2" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Step 3-->
+								<!--begin::Step 4-->
+								<div class="" data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+										<!--begin::Heading-->
+										<div class="pb-10 pb-lg-15">
+											<!--begin::Title-->
+											<h2 class="fw-bold text-dark">Support Type</h2>
+											<!--end::Title-->
+											
+										</div>
+										<!--end::Heading-->
+										
+										<!--begin::Input group-->
+													<div class="row mb-6">
+														
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<!--begin::Options-->
+															<div class="d-flex align-items-center mt-3">
+																
+																<!--begin::Option-->
+																<label class="form-check form-check-custom form-check-inline form-check-solid">
+																	<input class="form-check-input" name="Full Time[]" type="checkbox" value="2" />
+																	<span class="fw-semibold ps-2 fs-6">Full Time</span>
+																</label>
+																<!--end::Option-->
+															</div>
+															<!--end::Options-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<!--begin::Options-->
+															<div class="d-flex align-items-center mt-3">
+																
+																<!--begin::Option-->
+																<label class="form-check form-check-custom form-check-inline form-check-solid">
+																	<input class="form-check-input" name="Part Time[]" type="checkbox" value="2" />
+																	<span class="fw-semibold ps-2 fs-6">Part Time</span>
+																</label>
+																<!--end::Option-->
+																<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="time" name="Part Time" class="form-control form-control-lg form-control-solid" placeholder="Part Time" value="" />
+														</div>
+														<!--end::Col-->
+														
+														
+															</div>
+															<!--end::Options-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<!--begin::Options-->
+															<div class="d-flex align-items-center mt-3">
+																
+																<!--begin::Option-->
+																<label class="form-check form-check-custom form-check-inline form-check-solid">
+																	<input class="form-check-input" name="Weekly[]" type="checkbox" value="2" />
+																	<span class="fw-semibold ps-2 fs-6">weekly</span>
+																</label>
+																<!--end::Option-->
+																<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="Weekly" class="form-control form-control-lg form-control-solid" placeholder="Weekly" value="" />
+														</div>
+														<!--end::Col-->
+														
+															</div>
+															<!--end::Options-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<!--begin::Options-->
+															<div class="d-flex align-items-center mt-3">
+																
+																<!--begin::Option-->
+																<label class="form-check form-check-custom form-check-inline form-check-solid">
+																	<input class="form-check-input" name="Monthly[]" type="checkbox" value="2" />
+																	<span class="fw-semibold ps-2 fs-6">Monthly</span>
+																</label>
+																<!--end::Option-->
+																<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="Monthly" class="form-control form-control-lg form-control-solid" placeholder="Monthly" value="" />
+														</div>
+														<!--end::Col-->
+									                </div>
+															<!--end::Options-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<!--begin::Options-->
+															<div class="d-flex align-items-center mt-3">
+																
+																<!--begin::Option-->
+																<label class="form-check form-check-custom form-check-inline form-check-solid">
+																	<input class="form-check-input" name="Special Day[]" type="checkbox" value="2" />
+																	<span class="fw-semibold ps-2 fs-6">Special Day</span>
+																</label>
+																<!--end::Option-->
+																<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="Special Dayv" class="form-control form-control-lg form-control-solid" placeholder="Special Day" value="" />
+														</div>
+														<!--end::Col-->
+														
+														
+															</div>
+															<!--end::Options-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Heading-->
+										<div class="pb-10 pb-lg-15">
+											<!--begin::Title-->
+											<h2 class="fw-bold text-dark">Volunteer Role</h2>
+											<!--end::Title-->
+											
+										</div>
+										<!--end::Heading-->
+										<!--begin::Input group-->
+													<div class="row mb-12">
+														
+														<!--begin::Col-->
+														<div class="col-lg-12 fv-row">
+															<!--begin::Options-->
+															<div class="d-flex align-items-center mt-3">
+																
+																<!--begin::Option-->
+																<label class="form-check form-check-custom form-check-inline form-check-solid">
+																	<input class="form-check-input" name="Farmer[]" type="checkbox" value="2" />
+																	<span class="fw-semibold ps-2 fs-6">Farmer (Seed Supply,Loan Repayment,Water Support,etc...)</span>
+																</label>
+																<!--end::Option-->
+																</div>
+															<!--end::Options-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+										<!--begin::Input group-->
+													<div class="row mb-12">
+														
+														<!--begin::Col-->
+														<div class="col-lg-12 fv-row">
+															<!--begin::Options-->
+															<div class="d-flex align-items-center mt-3">
+																
+																<!--begin::Option-->
+																<label class="form-check form-check-custom form-check-inline form-check-solid">
+																	<input class="form-check-input" name="Education[]" type="checkbox" value="2" />
+																	<span class="fw-semibold ps-2 fs-6">Education (Tuition(Online and Offline),Education Fee,Notebook Supply,etc...)</span>
+																</label>
+																<!--end::Option-->
+																
+														</div>
+															<!--end::Options-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<!--begin::Options-->
+															<div class="d-flex align-items-center mt-3">
+																
+																<!--begin::Option-->
+																<label class="form-check form-check-custom form-check-inline form-check-solid">
+																	<input class="form-check-input" name=" Health[]" type="checkbox" value="2" />
+																	<span class="fw-semibold ps-2 fs-6"> Health</span>
+																</label>
+																<!--end::Option-->
+															</div>
+															<!--end::Options-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<!--begin::Options-->
+															<div class="d-flex align-items-center mt-3">
+																
+																<!--begin::Option-->
+																<label class="form-check form-check-custom form-check-inline form-check-solid">
+																	<input class="form-check-input" name="Natural Calamities[]" type="checkbox" value="2" />
+																	<span class="fw-semibold ps-2 fs-6">Natural Calamities</span>
+																</label>
+																<!--end::Option-->
+															</div>
+															<!--end::Options-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<!--begin::Options-->
+															<div class="d-flex align-items-center mt-3">
+																
+																<!--begin::Option-->
+																<label class="form-check form-check-custom form-check-inline form-check-solid">
+																	<input class="form-check-input" name=" Tree-Planting Program[]" type="checkbox" value="2" />
+																	<span class="fw-semibold ps-2 fs-6"> Tree-Planting Program</span>
+																</label>
+																<!--end::Option-->
+															</div>
+															<!--end::Options-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Step 4-->
+								<!--begin::Step 5-->
+								<div class="" data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+										<!--begin::Heading-->
+										<div class="pb-8 pb-lg-10">
+											<!--begin::Title-->
+											<h2 class="fw-bold text-dark">Your Are Done!</h2>
+											<!--end::Title-->
+											<!--begin::Notice-->
+											<div class="text-muted fw-semibold fs-6">If you need more info, please
+											<a href="../../demo1/dist/authentication/layouts/corporate/sign-in.html" class="link-primary fw-bold">Sign In</a>.</div>
+											<!--end::Notice-->
+										</div>
+										<!--end::Heading-->
+										<!--begin::Body-->
+										<div class="mb-0">
+											<!--begin::Text-->
+											<div class="fs-6 text-gray-600 mb-5">Writing headlines for blog posts is as much an art as it is a science and probably warrants its own post, but for all advise is with what works for your great & amazing audience.</div>
+											<!--end::Text-->
+											<!--begin::Alert-->
+											<!--begin::Notice-->
+											<div class="notice d-flex bg-light-warning rounded border-warning border border-dashed p-6">
+												<!--begin::Icon-->
+												<i class="ki-duotone ki-information fs-2tx text-warning me-4">
+													<span class="path1"></span>
+													<span class="path2"></span>
+													<span class="path3"></span>
+												</i>
+												<!--end::Icon-->
+												<!--begin::Wrapper-->
+												<div class="d-flex flex-stack flex-grow-1">
+													<!--begin::Content-->
+													<div class="fw-semibold">
+														<h4 class="text-gray-900 fw-bold">We need your attention!</h4>
+														<div class="fs-6 text-gray-700">To start using great tools, please,
+														<a href="../../demo1/dist/utilities/wizards/vertical.html" class="fw-bold">Create Team Platform</a></div>
+													</div>
+													<!--end::Content-->
+												</div>
+												<!--end::Wrapper-->
+											</div>
+											<!--end::Notice-->
+											<!--end::Alert-->
+										</div>
+										<!--end::Body-->
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Step 5-->
+								<!--begin::Actions-->
+								<div class="d-flex flex-stack pt-15">
+									<div class="mr-2">
+										<button type="button" class="btn btn-lg btn-light-primary me-3" data-kt-stepper-action="previous">
+										<i class="ki-duotone ki-arrow-left fs-4 me-1">
+											<span class="path1"></span>
+											<span class="path2"></span>
+										</i>Previous</button>
+									</div>
+									<div>
+										<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="submit">
+											<span class="indicator-label">Submit
+											<i class="ki-duotone ki-arrow-right fs-4 ms-2">
+												<span class="path1"></span>
+												<span class="path2"></span>
+											</i></span>
+											<span class="indicator-progress">Please wait...
+											<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+										</button>
+										<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">Continue
+										<i class="ki-duotone ki-arrow-right fs-4 ms-1">
+											<span class="path1"></span>
+											<span class="path2"></span>
+										</i></button>
+									</div>
+								</div>
+								<!--end::Actions-->
+							</form>
+							<!--end::Form-->
+						</div>
+						<!--end::Wrapper-->
+					</div>
+					<!--end::Content-->
+				</div>
+				<!--end::Body-->
+			</div>
+			<!--end::Authentication - Multi-steps-->
+		</div>
+		<!--end::Root-->
+		<!--begin::Javascript-->
+		<script>var hostUrl = "assets/";</script>
+		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
+		<script src="assets/plugins/global/plugins.bundle.js"></script>
+		<script src="assets/js/scripts.bundle.js"></script>
+		<!--end::Global Javascript Bundle-->
+		<!--begin::Custom Javascript(used for this page only)-->
+		<script src="assets/js/custom/utilities/modals/create-account.js"></script>
+		<!--end::Custom Javascript-->
+		<!--end::Javascript-->
+	</body>
+	<!--end::Body-->
+</html>

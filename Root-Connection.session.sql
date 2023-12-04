@@ -1,0 +1,1 @@
+CREATE DATABASE registered_users;

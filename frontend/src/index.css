@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body leading-6 bg-[#FCFCFC];
+  }
+
+  .input {
+    @apply bg-[#F9F9F9] text-[#99A9CE] outline-none focus:text-ternary focus:bg-gray-100 
+    px-4 py-2 rounded-md text-sm font-medium;
+  }
+
+  .formInput {
+    @apply w-full p-3 border rounded-md text-sm  outline-none focus:border-gray-400
+    font-medium bg-[#fcfcfc];
+  }
+
+  .inputError {
+    @apply w-full p-3 text-red-500 border border-red-500 rounded-md text-sm  outline-none
+    focus:border-red-400 placeholder:text-red-400 font-medium bg-red-100;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fcfcfc;
+  border: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f1f1f2;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e2e1e1;
+}

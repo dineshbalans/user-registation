@@ -4,11 +4,17 @@ import NextButton from "./UI/NextButton";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { userDataActions } from "../store/userDataSlice";
+import LoadingButton from "./UI/LoadingButton";
+
+const DATABASE_URL = "http://localhost:8080/register";
+// const DATABASE_URL =
+//   "https://user-registration-1397a-default-rtdb.asia-southeast1.firebasedatabase.app/registered_users.json";
 
 const SupportType = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
+  const [loadingBtn, setLoadingBtn] = useState(false);
   const userData = useSelector((state) => state.userData);
 
   const {
@@ -29,6 +35,7 @@ const SupportType = () => {
   } = userData;
 
   const nextButtonHandler = async () => {
+    setLoadingBtn(true);
     const transformedDATA = {};
     for (const key in userData) {
       if (Object.hasOwnProperty.call(userData, key)) {
@@ -38,29 +45,21 @@ const SupportType = () => {
     console.log(transformedDATA);
 
     // Perform the fetch request
-    fetch("http://localhost:8080/register", {
-      mode: "no-cors",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-      body: JSON.stringify(transformedDATA),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        // Handle the response data
-        console.log("Registration successful:", data);
-      })
-      .catch((error) => {
-        // Handle errors
-        console.error("Error during registration:", error);
+    try {
+      const response = await fetch(DATABASE_URL, {
+        method: "POST",
+        body: JSON.stringify(transformedDATA),
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
       });
+
+      const data = await response.json();
+      console.log("Registration successful:", data);
+    } catch (error) {
+      console.error(error);
+    }
 
     navigate("/what-next");
   };
@@ -346,9 +345,18 @@ const SupportType = () => {
         </div>
       </div>
       <div className="flex justify-between pt-16">
-        <PreviousButton URL="/person-details" />
-        <NextButton onClick={nextButtonHandler} />
+        {!loadingBtn && <PreviousButton URL="/person-details" />}
+        {loadingBtn ? (
+          <LoadingButton />
+        ) : (
+          <NextButton onClick={nextButtonHandler} />
+        )}
       </div>
+      {loadingBtn && (
+        <h1 className="text-center sml:text-right">
+          User Registration takes some time, please wait...
+        </h1>
+      )}
     </section>
   );
 };

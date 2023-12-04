@@ -1,5 +1,7 @@
 package com.dinesh.serviceImpl;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.dinesh.model.User;
@@ -13,6 +15,16 @@ public class UserServiceImpl implements UserService {
 
     public UserServiceImpl(UserRepositary repositary) {
         this.repositary = repositary;
+    }
+
+    @Override
+    public List<User> getAllUsers() {
+        return repositary.findAll();
+    }
+
+    @Override
+    public User getUserByID(Long id) {
+        return repositary.findById(id).orElse(new User());
     }
 
     @Override

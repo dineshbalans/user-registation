@@ -1,16 +1,44 @@
 import React from "react";
-import { FaGoogle, FaApple } from "react-icons/fa";
+import { FaGoogle, FaFacebook } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { userDataActions } from "../store/userDataSlice";
 import DisplayError from "./UI/DisplayError";
 import NextButton from "./UI/NextButton";
+import { signInWithPopup } from "firebase/auth";
+import { auth, googleProvider, facebookProvider } from "../config/firebase";
 
 const Accounttype = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const { email, pswd, rePswd } = useSelector((state) => state.userData);
+
+  const signInWithGoogleHandler = async () => {
+    try {
+      const response = await signInWithPopup(auth, googleProvider);
+      console.log(response.user);
+    } catch (error) {
+      console.error(error);
+    }
+    navigate("/person-info");
+  };
+
+  const signInWithFacebookHandler = async () => {
+    try {
+      const response = await signInWithPopup(auth, facebookProvider);
+      dispatch(
+        userDataActions.setEmail({ type: "VALUE", value: response.user.email })
+      );
+      dispatch(
+        userDataActions.setPswd({ type: "VALUE", value: response.user.email })
+      );
+      console.log(response.user);
+    } catch (error) {
+      console.error(error);
+    }
+    navigate("/person-info");
+  };
 
   const nextButtonHandler = () => {
     if (
@@ -100,6 +128,7 @@ const Accounttype = () => {
       {/* Login Buttons */}
       <div className="flex justify-between items-center pt-10 pb-5">
         <button
+          onClick={signInWithGoogleHandler}
           className="rounded-md px-4 py-2 text-gray-600  
             text-sm border w-[49%] font-medium
             flex justify-center items-center gap-3
@@ -110,14 +139,15 @@ const Accounttype = () => {
           <span>Sign in with Google</span>
         </button>
         <button
+          onClick={signInWithFacebookHandler}
           className="rounded-md px-4 py-2 text-gray-600  
             text-sm border w-[49%] font-medium
             flex justify-center items-center gap-3
             hover:text-secondary transition-colors ease-in-out 
             hover:drop-shadow-2xl shadow-secondary"
         >
-          <FaApple className="scale-[1.4]" />
-          <span>Sign in with Apple</span>
+          <FaFacebook className="scale-[1.4]" />
+          <span>Sign in with Facebook</span>
         </button>
       </div>
       {/* line through */}
@@ -155,7 +185,7 @@ const Accounttype = () => {
               )
             }
           />
-          
+          {email.isError && <DisplayError errorMsg={email.isError} />}
           <input
             type="text"
             placeholder="Password"

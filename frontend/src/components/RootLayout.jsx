@@ -11,7 +11,7 @@ const RootLayout = () => {
         <img
           src={LOGO}
           alt=""
-          className="object-contain w-[15%] mx-auto py-20"
+          className="object-contain w-[45%] mx-auto py-16"
         />
         {sideBarItems.map(({ id, secNo, title, subTitle }) => (
           <div className="flex pb-12 justify-center" key={id}>
